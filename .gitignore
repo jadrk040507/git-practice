@@ -1,0 +1,3 @@
+# Ignore Windows thumbnail cache files
+desktop.ini
+Thumbs.db
