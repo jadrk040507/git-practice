@@ -1,23 +1,24 @@
-# Economic Observatory - Git & GitHub Practice Repository
+# Economic Observatory - Interactive Data Visualization Platform
 
-Welcome to the Economic Observatory practice repository! This project teaches economics students how to use Git and GitHub while building a collaborative economic data analysis platform.
+Welcome to the Economic Observatory! This cutting-edge platform combines Git version control with modern data visualization to create an interactive economic analysis environment.
 
 ## Project Overview
 
-This repository simulates a real-world economic observatory where students collaborate to:
-- Collect and track economic indicators from INEGI
-- Analyze economic data using R programming
-- Generate professional reports and visualizations
-- Share findings through collaborative Git workflows
-- Learn version control best practices
+This repository is a complete economic data visualization platform where students:
+- **Build interactive Streamlit dashboards** with real-time data
+- **Visualize economic trends** using Plotly and modern charting libraries
+- **Analyze data with Python and R** in an integrated environment
+- **Collaborate using GitHub** for team-based economic research
+- **Deploy web applications** to share insights with stakeholders
 
-### What Makes This Different?
+### 🚀 Featured: Live Economic Dashboard
 
-Unlike generic Git tutorials, this project uses:
-- **Real economic data** from Mexican institutions (INEGI)
-- **Professional R scripts** for GDP, inflation, and labor analysis
-- **Actual API integration** with secure token management
-- **Collaborative workflows** mirroring real research teams
+This platform showcases a production-ready Streamlit dashboard featuring:
+- **📊 Interactive GDP Analysis** - Dual-axis charts with growth rates
+- **💰 Inflation Tracker** - CPI trends with Banco de México targets
+- **👥 Labor Market Monitor** - Real-time employment statistics
+- **🎛️ Dynamic Filters** - Date range selection and indicator toggles
+- **📱 Mobile Responsive** - Access anywhere, anytime
 
 ## Learning Objectives
 
@@ -100,35 +101,50 @@ economic-observatory/
 
 ## Quick Start
 
-### Get Started with Git Basics
+### 🎯 Launch the Dashboard in 2 Minutes!
 
-**Step 1: Fork this Repository**
-1. Click the "Fork" button at the top right
-2. This creates your own copy on your GitHub account
-
-**Step 2: Clone to Your Computer**
+Experience the power of interactive economic visualization:
 
 ```bash
-# Clone your fork
+# Step 1: Clone the repository
 git clone https://github.com/YOUR-USERNAME/git-practice.git
 cd git-practice
+
+# Step 2: Install dependencies (one-time setup)
+pip install -r requirements.txt
+
+# Step 3: Launch the dashboard
+streamlit run dashboard_app.py
 ```
 
-### Complete Exercise 1
+**Boom!** 💥 Your browser opens at `http://localhost:8501` with:
+- Live economic charts
+- Interactive data exploration
+- Professional visualizations
 
-Start with [Exercise 1](exercises/exercise-1-setup.md) to learn Git basics by adding your economist profile.
+**Want to learn more?** Check out:
+- 📖 [Dashboard Features](DASHBOARD_FEATURES.md) - Complete documentation
+- 🎓 [Exercise 1](exercises/exercise-1-setup.md) - Learn Git basics
+- 🔧 [Dashboard Customization](DASHBOARD_README.md) - Make it your own
 
 ---
 
-## Exercises
+## Learning Path
 
-Complete these exercises in order to master Git while analyzing Mexican economic data:
+Master Git and data visualization through hands-on exercises:
 
-1. **[Exercise 1: Setup](exercises/exercise-1-setup.md)** - Fork, clone, add your economist profile
-2. **[Exercise 2: Environment Variables](exercises/exercise-2-setup-environment.md)** - Configure INEGI API token securely
-3. **[Exercise 3: Git Ignore](exercises/exercise-3-gitignore.md)** - Understand what files to track
-4. **[Exercise 4: Running Scripts](exercises/exercise-4-running-scripts.md)** - Execute R analysis scripts
-5. **[Exercise 5: Branching](exercises/exercise-5-branching-merging.md)** - Master branches and merge conflicts
+### 🎯 Level 1: Foundations
+1. **[Getting Started](exercises/exercise-1-setup.md)** - Fork, clone, and setup
+2. **[API Configuration](exercises/exercise-2-setup-environment.md)** - Secure INEGI token management
+
+### 📊 Level 2: Data & Analysis
+3. **[Repository Management](exercises/exercise-3-gitignore.md)** - .gitignore best practices
+4. **[Running Analyses](exercises/exercise-4-running-scripts.md)** - Execute R scripts, generate insights
+
+### 🚀 Level 3: Collaboration & Deployment
+5. **[Branch Workflow](exercises/exercise-5-branching-merging.md)** - Branches, PRs, **merge conflicts** (you'll practice merging this dashboard branch!)
+
+**Pro Tip**: Start with the dashboard to see the end goal, then work through exercises to build your skills!
 
 ---
 
