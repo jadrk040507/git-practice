@@ -41,14 +41,6 @@ htmlcov/
 .Rproj.user
 *.Rproj
 
-# Data files (large datasets)
-*.csv.gz
-*.xlsx
-*.xls
-data/raw/
-data/processed/
-*.sqlite
-*.db
 
 # IDE
 .vscode/
