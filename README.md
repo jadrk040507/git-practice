@@ -1,105 +1,193 @@
-# Skope
+# Economic Observatory - Git & GitHub Practice Repository
 
-This project automates the fetching, processing, and updating of data from APIs such as FRED and INEGI, saving the results as CSV files in the repository. The workflow is managed through GitHub Actions to ensure data is updated regularly.
+Welcome to the Economic Observatory practice repository! This project teaches economics students how to use Git and GitHub while building a collaborative economic data analysis platform.
 
-## Table of Contents
-1. [Project Structure](#project-structure)
-2. [Prerequisites](#prerequisites)
-3. [Adding and Editing R Scripts](#adding-and-editing-r-scripts)
-4. [Editing the GitHub Actions Workflow (YAML File)](#editing-the-github-actions-workflow-yaml-file)
-5. [Managing Access Tokens and Secrets](#managing-access-tokens-and-secrets)
-6. [Common Issues and Troubleshooting](#common-issues-and-troubleshooting)
+## Project Overview
 
-## Project Structure
+This repository simulates a real-world economic observatory where students collaborate to:
+- Collect and track economic indicators
+- Analyze economic data using Python/R
+- **Build interactive dashboards with Streamlit** ✨
+- Generate reports and visualizations
+- Share findings through collaborative workflows
 
-Here's a quick overview of the main folders and files in this layout, including workflows, data, and reference materials:
+### 🎯 NEW: Interactive Dashboard Feature
 
-```
-├── .github/workflows/     # CI workflows
-├── r/                    # Data-fetching R scripts
-├── data/                 # Generated CSVs
-├── plots/                # Output graphics
-├── pdf/                  # Reference PDFs
-├── calendar/             # Calendar PDFs
-├── environment.yml       # Conda environment
-└── README.md
-```
+This branch adds a powerful Streamlit dashboard for visualizing economic data:
+- Real-time interactive charts (GDP, Inflation, Unemployment)
+- Dynamic date range filters
+- Professional Plotly visualizations
+- Perfect for presentations and analysis
 
-## Prerequisites
+## Learning Objectives
 
-- **GitHub account** with appropriate permissions to push changes to the repository.
-- **R** installed locally for script testing and debugging.
-- **Git** installed to clone the repository and manage version control.
+By completing this tutorial, you will:
+- Master Git fundamentals (fork, clone, commit, push, pull)
+- Work with branches and feature development
+- Handle merge conflicts professionally
+- Collaborate using GitHub Pull Requests
+- Apply version control to data analysis projects
+- Document economic research using Markdown
+- Manage data files and analysis scripts
 
-## Adding and Editing R Scripts
-
-### 1. Writing R Scripts
-
-- **R scripts** should fetch, process, and save data to CSV files. Use libraries like `httr`, `jsonlite`, `dplyr`, and `readr` to interact with APIs, process the data, and handle file operations.
-- Ensure each script has a clear purpose and error handling to manage failed API requests or data processing issues.
-- Save the output CSV files in the appropriate directory based on the data type (e.g., `US/Monitor cambiario` for US data).
-
-**Example Template for R Scripts:**
-
-### 2. Where to Put R Scripts
-
-- Place new R scripts inside the relevant directory (e.g., `r`) based on the data's geographic region or topic.
-- Ensure the script’s file name reflects its function, like `inflation_data.r` for fetching inflation data.
-
-## Editing the GitHub Actions Workflow (YAML File)
-
-The GitHub Actions workflow, typically located in `.github/workflows/update_data.yml`, automates the data fetching and updating process.
-
-### 1. Editing the YAML File
-
-To add a new R script to the workflow, follow these steps:
-
-1. Open `.github/workflows/update_data.yml`.
-2. Add a new step under the `jobs` section for the R script you want to run.
-3. Make sure the script paths and any required environment variables (e.g., API keys) are correctly set up.
-
-### 2. Adjusting the Schedule
-
-- The schedule for the job is set in the `on` section using cron syntax.
-- Example: To run every 5 minutes, adjust the cron line to:
-  ```yaml
-  schedule:
-    - cron: '*/5 * * * *'
-  ```
-
-## Managing Access Tokens and Secrets
-
-### 1. Adding or Changing Access Tokens
-
-Access tokens or API keys are stored as GitHub Secrets for security. To manage secrets:
-
-1. Go to your GitHub repository.
-2. Navigate to **Settings > Secrets and variables > Actions**.
-3. Click **New repository secret**.
-4. Enter the name (e.g., `FRED_API_KEY`) and value of the secret.
-
-### 2. Using Secrets in R Scripts
-
-- Retrieve secrets in your R scripts using environment variables:
-
-  ```r
-  api_key <- Sys.getenv('FRED_API_KEY')
-  ```
-
-- Make sure the secret names in your workflow YAML file match those you set up in GitHub.
-
-## Common Issues and Troubleshooting
-
-- **403 Errors (Permission Denied):** Ensure your GitHub token has the correct permissions.
-- **API Rate Limits:** Monitor API usage and consider caching data locally if rate limits are exceeded.
-- **Script Errors:** Check logs from GitHub Actions to debug issues. Logs provide detailed feedback on each step's execution.
-  
 ---
 
-### Key Changes:
+## Git & GitHub Roadmap
 
-- **Replaced Python with R** in the script-writing section. The R scripts use libraries like `httr`, `jsonlite`, `dplyr`, and `readr` for API interactions and data processing.
-- The workflow and secrets management sections are largely unchanged but adapted for R, with `Sys.getenv()` for environment variables.
-- R-specific libraries and functions are used for fetching and processing data.
+This project follows a realistic workflow for collaborative economic research.
 
-This setup ensures your R scripts are correctly integrated with GitHub Actions and can automate the process of fetching and updating your data regularly.
+### Phase 1: Getting Started
+**Skills**: Fork, Clone, Add, Commit, Push
+
+- Fork and clone the repository
+- Add your economist profile
+- Make your first commit
+- Push changes to GitHub
+
+### Phase 2: Data Collection
+**Skills**: Branches, Checkout, Merge
+
+- Create a feature branch for new data
+- Add economic indicator data (CSV)
+- Merge into main branch
+
+### Phase 3: Analysis Scripts
+**Skills**: Pull Requests, Code Review
+
+- Write Python/R analysis scripts
+- Create Pull Request
+- Review teammate's code
+
+### Phase 4: Report Writing
+**Skills**: Merge Conflicts, Amend
+
+- Collaborate on economic reports
+- Handle merge conflicts
+- Amend commits to fix mistakes
+
+### Phase 5: Visualization
+**Skills**: Stash, Tags, Releases
+
+- Build interactive dashboards
+- Tag stable versions
+- Create releases
+
+---
+
+## Repository Structure
+
+```
+economic-observatory/
+├── README.md                 # This file
+├── CONTRIBUTING.md          # Contribution guidelines
+├── .gitignore              # Files to ignore
+├── .env.example            # API keys template
+├── economists/             # Economist profiles
+├── data/                   # Economic data files
+│   ├── gdp/
+│   ├── inflation/
+│   └── unemployment/
+├── analysis/              # Analysis scripts
+│   ├── python/
+│   └── r/
+├── reports/              # Economic reports
+├── visualizations/       # Charts and graphs
+├── exercises/           # Step-by-step tutorials
+└── resources/          # Learning resources
+```
+
+---
+
+## Quick Start
+
+### Try the Dashboard First! 🚀
+
+```bash
+# Install dependencies
+pip install -r requirements.txt
+
+# Launch the interactive dashboard
+streamlit run dashboard_app.py
+```
+
+Opens at `http://localhost:8501` - explore Mexico's economic indicators!
+
+See [DASHBOARD_FEATURES.md](DASHBOARD_FEATURES.md) for complete dashboard documentation.
+
+### Fork and Clone
+
+```bash
+# Clone your fork
+git clone https://github.com/YOUR-USERNAME/git-practice.git
+cd git-practice
+```
+
+### Complete Exercise 1
+
+Start with [Exercise 1](exercises/exercise-1-setup.md) to learn Git basics by adding your economist profile.
+
+---
+
+## Exercises
+
+1. **[Join the Observatory](exercises/exercise-1-setup.md)** - Fork, clone, commit, push
+2. **[Collect Economic Data](exercises/exercise-2-data-collection.md)** - Branches, merge
+3. **[Build Analysis Scripts](exercises/exercise-3-analysis.md)** - Pull requests
+4. **[Write Reports](exercises/exercise-4-reporting.md)** - Merge conflicts
+5. **[Create Visualizations](exercises/exercise-5-visualization.md)** - Advanced Git
+
+---
+
+## Key Commands
+
+```bash
+# Basic workflow
+git status
+git add filename
+git commit -m "message"
+git push origin main
+
+# Branching
+git checkout -b feature/new-feature
+git merge feature-branch
+
+# Collaboration
+git pull origin main
+git fetch origin
+```
+
+---
+
+## Economic Data Sources
+
+- **INEGI** (Mexico): https://www.inegi.org.mx
+- **World Bank**: https://data.worldbank.org
+- **FRED**: https://fred.stlouisfed.org
+- **OECD**: https://data.oecd.org
+
+See [resources/economic-data-sources.md](resources/economic-data-sources.md) for details.
+
+---
+
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on:
+- Adding economic data
+- Writing analysis scripts
+- Creating reports
+- Code review process
+
+---
+
+## Help & Resources
+
+- [Git Documentation](https://git-scm.com/doc)
+- [GitHub Guides](https://guides.github.com/)
+- Check [exercises/](exercises/) for tutorials
+- Open an issue for questions
+
+---
+
+**License**: MIT
+
+Start with [Exercise 1](exercises/exercise-1-setup.md) and begin your journey!
