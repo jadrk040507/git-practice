@@ -5,19 +5,19 @@ Welcome to the Economic Observatory practice repository! This project teaches ec
 ## Project Overview
 
 This repository simulates a real-world economic observatory where students collaborate to:
-- Collect and track economic indicators
-- Analyze economic data using Python/R
-- **Build interactive dashboards with Streamlit** ✨
-- Generate reports and visualizations
-- Share findings through collaborative workflows
+- Collect and track economic indicators from INEGI
+- Analyze economic data using R programming
+- Generate professional reports and visualizations
+- Share findings through collaborative Git workflows
+- Learn version control best practices
 
-### 🎯 NEW: Interactive Dashboard Feature
+### What Makes This Different?
 
-This branch adds a powerful Streamlit dashboard for visualizing economic data:
-- Real-time interactive charts (GDP, Inflation, Unemployment)
-- Dynamic date range filters
-- Professional Plotly visualizations
-- Perfect for presentations and analysis
+Unlike generic Git tutorials, this project uses:
+- **Real economic data** from Mexican institutions (INEGI)
+- **Professional R scripts** for GDP, inflation, and labor analysis
+- **Actual API integration** with secure token management
+- **Collaborative workflows** mirroring real research teams
 
 ## Learning Objectives
 
@@ -100,21 +100,13 @@ economic-observatory/
 
 ## Quick Start
 
-### Try the Dashboard First! 🚀
+### Get Started with Git Basics
 
-```bash
-# Install dependencies
-pip install -r requirements.txt
+**Step 1: Fork this Repository**
+1. Click the "Fork" button at the top right
+2. This creates your own copy on your GitHub account
 
-# Launch the interactive dashboard
-streamlit run dashboard_app.py
-```
-
-Opens at `http://localhost:8501` - explore Mexico's economic indicators!
-
-See [DASHBOARD_FEATURES.md](DASHBOARD_FEATURES.md) for complete dashboard documentation.
-
-### Fork and Clone
+**Step 2: Clone to Your Computer**
 
 ```bash
 # Clone your fork
@@ -130,11 +122,13 @@ Start with [Exercise 1](exercises/exercise-1-setup.md) to learn Git basics by ad
 
 ## Exercises
 
-1. **[Join the Observatory](exercises/exercise-1-setup.md)** - Fork, clone, commit, push
-2. **[Collect Economic Data](exercises/exercise-2-data-collection.md)** - Branches, merge
-3. **[Build Analysis Scripts](exercises/exercise-3-analysis.md)** - Pull requests
-4. **[Write Reports](exercises/exercise-4-reporting.md)** - Merge conflicts
-5. **[Create Visualizations](exercises/exercise-5-visualization.md)** - Advanced Git
+Complete these exercises in order to master Git while analyzing Mexican economic data:
+
+1. **[Exercise 1: Setup](exercises/exercise-1-setup.md)** - Fork, clone, add your economist profile
+2. **[Exercise 2: Environment Variables](exercises/exercise-2-setup-environment.md)** - Configure INEGI API token securely
+3. **[Exercise 3: Git Ignore](exercises/exercise-3-gitignore.md)** - Understand what files to track
+4. **[Exercise 4: Running Scripts](exercises/exercise-4-running-scripts.md)** - Execute R analysis scripts
+5. **[Exercise 5: Branching](exercises/exercise-5-branching-merging.md)** - Master branches and merge conflicts
 
 ---
 
