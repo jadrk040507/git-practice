@@ -6,9 +6,6 @@ library(tidyverse)
 library(hrbrthemes)
 library(showtext)
 library(svglite)
-library(dotenv)
-
-load_dot_env()
 
 source("r/theme_skope.R")
 skope_load_fonts()

@@ -9,10 +9,7 @@ library(hrbrthemes)
 library(showtext)
 library(svglite)
 library(scales)
-library(dotenv)
 
-# Load environment variables from .env file
-load_dot_env()
 
 source("r/theme_skope.R")
 skope_load_fonts()
